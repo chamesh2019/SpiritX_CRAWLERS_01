@@ -83,6 +83,9 @@ export function Signup() {
       .then((data) => {
         if (data.status === "success") {
           showToast(data.message, 1);
+          setTimeout(() => {
+            window.location.href = "/login";
+          }, 1000);
         }
         if (data.status === "error") {
           showToast(data.message, 0);
@@ -163,7 +166,7 @@ export function Signup() {
                 isPasswordFocus && !isPasswordValid ? "" : "hidden"
               }`}
             >
-              Password must be longer than 6 characters
+              Password must be longer than 8 characters
             </p>
 
             <div

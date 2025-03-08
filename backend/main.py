@@ -127,6 +127,8 @@ def signup():
         if len(username) < 6 or len(password) < 6:
             return jsonify({"status": "error", "message": "Username and Password must be at least 6 characters long"})
         
+        if getUserInfo(username):
+            return jsonify({"status": "error", "message": "Username already exists"})
         InsertUser(username, password)
 
         return jsonify({"status": "success", "message": "Signed up successfully"})
