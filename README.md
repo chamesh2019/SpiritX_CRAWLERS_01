@@ -14,6 +14,7 @@ Form Generator is a powerful and flexible tool designed to help developers creat
 
 ## Getting Started
 To get started with Form Generator, follow these steps:
+This project uses TinyDB library as a local small database. No externel DB configurations
 
 ## Run Server
 1. Clone the repository:
