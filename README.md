@@ -16,8 +16,6 @@ Form Generator is a powerful and flexible tool designed to help developers creat
 To get started with Form Generator, follow these steps:
 
 ## Run Server
-## Installation
-
 1. Clone the repository:
     ```sh
     git clone https://github.com/chamesh2019/SpiritX_CRAWLERS_01.git
